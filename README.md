@@ -18,8 +18,6 @@ The first option "Option_imaging" allows you to choose between 3 different imple
 
 %   Copyright 2024 Samuel Rodriguez
 
-% 
-
 %    Licensed under the Apache License, Version 2.0 (the "License");
 
 %    you may not use this file except in compliance with the License.
