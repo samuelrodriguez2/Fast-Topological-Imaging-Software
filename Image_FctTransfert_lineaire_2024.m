@@ -54,8 +54,8 @@ champ_adjoint=zeros(size(Ptes_calcul.donnees,1),Larg_imag_px,size(Ptes_calcul.do
 ind_min_global=round(indice_bord_image-(Nb_exc-1/2)*Decalage_pas);
 ind_max_global=round(indice_bord_image-1/2*Decalage_pas)+Larg_imag_px-1;
 if (ind_max_global> size(Ptes_calcul.donnees,2)) || (ind_min_global<1)
-    abs(min((ind_min_global-1),0)) 
-    max(ind_max_global-size(Ptes_calcul.donnees,2),0)
+    % abs(min((ind_min_global-1),0)) 
+    % max(ind_max_global-size(Ptes_calcul.donnees,2),0)
     Ptes_calcul.donnees=cat(2,...
         zeros(size(Ptes_calcul.donnees,1), abs(min((ind_min_global-1),0)) ,size(Ptes_calcul.donnees,3)),...
         Ptes_calcul.donnees(:,max(ind_min_global,1):min(ind_max_global,end),:),...
